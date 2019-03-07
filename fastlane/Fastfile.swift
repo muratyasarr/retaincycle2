@@ -17,7 +17,6 @@ class Fastfile: LaneFile {
     func betaLane() {
         desc("Submit a new Beta Build to Apple TestFlight. This will also make sure the profile is up to date")
         
-//        syncCodeSigning(gitUrl: "https://github.com/muratyasarr/retaincycle", appIdentifier: ["co.senfoni.Retain-Cycle"], username: appleID)
         // Build your app - more options available
         buildIosApp(scheme: "Retain Cycle")
         uploadToTestflight(username: appleID)
